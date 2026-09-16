@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Asmaul Husna</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{font-family:Arial,Helvetica,sans-serif;color:#202957;background:#fff;line-height:1.6}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(25,35,91,.96);backdrop-filter:blur(10px);padding:14px 6%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 15px rgba(0,0,0,.15)}
+.logo{color:white;font-size:22px;font-weight:700;text-decoration:none}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:.25s}
+.nav-links a:hover,.nav-links a.active{color:#aebcff}
+.cv{background:#7889ff;padding:9px 16px;border-radius:25px}
+.menu{display:none;color:white;font-size:25px;cursor:pointer}
+.hero{min-height:100vh;padding:130px 8% 70px;background:linear-gradient(135deg,#1d2b72,#3e49a5 60%,#8654c7);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.hero-text{max-width:620px}
+.badge{display:inline-block;border:1px solid #9eafff;border-radius:30px;padding:6px 16px;font-size:11px;letter-spacing:3px;margin-bottom:20px}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.05;margin-bottom:15px}
+.hero h2{font-size:22px;margin-bottom:15px}
+.hero p{max-width:600px;color:#e5e8ff}
+.buttons{display:flex;gap:15px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;border:1px solid white;color:white;padding:12px 22px;border-radius:30px;font-weight:600}
+.btn.primary{background:#ff6b71;border:none}
+.photo-wrap{width:330px;height:430px;border-radius:28px;background:rgba(255,255,255,.13);padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+section{padding:90px 8%}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title small{color:#6878ef;letter-spacing:4px;font-weight:700}
+.section-title h2{font-family:Georgia,serif;font-size:38px;margin-top:8px}
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}
+.card{background:white;border:1px solid #e6e9f5;border-radius:20px;padding:28px;box-shadow:0 8px 25px rgba(38,53,120,.07)}
+.about-photo img{width:100%;max-width:330px;display:block;margin:auto;border-radius:20px}
+.light{background:#f1f5ff}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.skill h3,.experience h3{margin:8px 0}
+.bar{height:8px;background:#e2e6fa;border-radius:10px;overflow:hidden;margin-top:15px}
+.bar span{display:block;height:100%;width:65%;background:linear-gradient(90deg,#6678ff,#7655d8);border-radius:10px}
+.project{background:linear-gradient(135deg,#1e2c70,#404da7);color:white;border-radius:22px;padding:38px;display:flex;justify-content:space-between;gap:30px;align-items:center}
+.project .btn{margin-top:20px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contact-card{text-align:center}
+footer{background:#19245d;color:#ccd2ff;text-align:center;padding:25px;font-size:12px}
+@media(max-width:760px){
+.nav-links{display:none;position:absolute;top:58px;left:0;right:0;background:#19245d;flex-direction:column;padding:20px;gap:18px}
+.nav-links.show{display:flex}
+.menu{display:block}
+.cv{padding:8px 13px}
+.hero{padding-top:110px;flex-direction:column;text-align:center}
+.hero-text{order:2}
+.photo-wrap{order:1;width:250px;height:320px}
+.buttons{justify-content:center}
+.about,.grid,.contact-grid{grid-template-columns:1fr}
+section{padding:70px 6%}
+.section-title h2{font-size:30px}
+.project{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a class="logo" href="#beranda"> <span style="font-size:13px">Asmaul Husna</span></a>
+<div class="menu" onclick="toggleMenu()">☰</div>
+<div class="nav-links" id="navLinks">
+<a href="#beranda">Beranda</a>
+<a href="#tentang">Tentang</a>
+<a href="#keahlian">Keahlian</a>
+<a href="#proyek">Proyek</a>
+<a href="#kontak">Kontak</a>
+</div>
+</nav>
+
+<section id="beranda" class="hero">
+<div class="hero-text">
+<span class="badge">PORTOFOLIO MAHASISWA</span>
+<h1>  Asmaul Husna
+</h1>
+<h2>Mahasiswa Semester 5 Teknik Informatika</h2>
+<p>Mahasiswa Teknik Informatika Universitas Jabal Ghafur yang terus ingin memahami HTML dan CSS, serta mengembangkan kemampuan dalam membangun website.</p>
+<div class="buttons">
+<a class="btn primary" href="#proyek">Lihat Proyek ↓</a>
+<a class="btn" href="#kontak">Hubungi Saya</a>
+</div>
+</div>
+<div class="about-photo"><img src="WhatsApp Image 2026-09-16 at 11.32.20.jpeg"alt="foto dian">
+</div></section>
+
+<section id="tentang">
+<div class="section-title">
+<small>TENTANG SAYA</small>
+<h2>Mengenal Lebih Dekat</h2>
+</div>
+<div class="about">
+<div class="card">
+<p>Halo, saya <b>Asmaul Husna</b>. Saya merupakan mahasiswi semester 5 program studi Teknik Informatika di Universitas Jabal Ghafur.</p>
+<br>
+<p>Saya memiliki ketertarikan yang besar dalam dunia pengembangan web, khususnya HTML dan CSS. Saya selalu bersemangat untuk mempelajari hal baru dan mengasah kemampuan pemrograman saya.</p>
+</div>
+
+
+</section>
+
+<section id="keahlian" class="light">
+<div class="section-title">
+<small>KEAHLIAN & PENGALAMAN</small>
+<h2>Kemampuan yang Dipelajari</h2>
+</div>
+<div class="grid">
+<div class="card skill">
+<h3>HTML & CSS</h3>
+<p>Memahami struktur dasar halaman web serta pembuatan tampilan yang menarik dan responsif.</p>
+<div class="bar"><span></span></div>
+</div>
+<div class="card experience">
+<h3>Pemrograman Web</h3>
+<p>Sedang mendalami pengembangan front-end website secara mandiri maupun melalui perkuliahan.</p>
+<div class="bar"><span></span></div>
+</div>
+</div>
+</section>
+
+<section id="proyek">
+<div class="section-title">
+<small>PORTOFOLIO</small>
+<h2>Proyek Sederhana</h2>
+</div>
+<div class="project">
+<div>
+<h3>Website Portofolio Pribadi</h3>
+<p>Proyek pembuatan website portofolio menggunakan HTML dan CSS untuk menampilkan informasi tentang diri, keahlian, dan proyek yang dikerjakan.</p>
+</div>
+<div>
+<a class="btn" href="#beranda">Lihat Detail</a>
+</div>
+</div>
+</section>
+
+<section id="kontak" class="light">
+<div class="section-title">
+<small>KONTAK</small>
+<h2><section-title">mari terhubung </h2>
+</div>
+<div class="contact-grid">
+
+    
+
+    
+<div class="social-buttons">
+<a href="https://github.com/asmaulhusna062005-sudo" target="_blank" class="social-card">
+                <div class="social-left">
+                    <div class="social-icon">GH</div>
+                    <div class="social-details">
+<h3>github</h3>
+<p>asmaulhusna062005</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; Asmaul Husna. Dibuat untuk Portofolio Mahasiswa Teknik Informatika Unigha.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("show");
+}
+
+function downloadCV(e) {
+    e.preventDefault();
+    alert("Fitur Download CV akan segera tersedia.");
+}
+</script>
+
+</body>
+</html>
